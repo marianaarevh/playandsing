@@ -231,29 +231,55 @@ section > h1 {
 
 /* #endregion */
 
-/* #region Section Artista Destacado */
+/* #region Section Eventos */
+#eventos{
+  background-image: url('../img/concierto.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+#eventos > h1 {
+  padding: 40px 0px 0px 40px;
+  margin: 40px 0px 0px 40px;
+  color: #f0f0f0;
+}
+
+
 .proximos-eventos {
-  padding: 15px;
+  padding: 0px 40px 40px 40px;
+  height: auto;
+  margin: 0px 40px 0px 40px;
 }
 
 .evento {
   display: flex;
   padding: 15px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.35);
   margin: 20px;
 
+}
+
+.evento:hover {
+  transform: scale(1.05);
 }
 
 .evento-fecha{
   text-align: center;
   font-size: 1.5rem;
-  color: rgb(197, 2, 207);
+  font-weight: 600;
+  color: #43DDE6;
 }
 
 .evento-info {
   padding-left: 25px;
   font-size: 1.1rem;
+  color: #ffffff;
 }
 
 #evento-nombre {
