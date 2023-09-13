@@ -15,7 +15,8 @@ body {
 }
 
 main {
-  padding-top: 70px;
+  padding-top: 60px;
+  
 }
 
 /* #region NavBar */
@@ -99,21 +100,25 @@ font-weight: 600;
 /* #endregion */
 
 /* #region Section Inicio */
+#inicio{
+  background-image: url('../img/banner3.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  height: 70vh;
+  }
 
-#banner {
-height: auto;
-Max-width: 100%;
-padding: 0px;
-display:flex;
-margin: 0px;
-}
+  #inicio>h1{
+    padding: 40px 0px 0px 40px;
+    margin: 40px 0px 0px 40px;
+    margin-top: 0px;
 
-#banner > img {
-width: auto; 
-height: auto;
+    color: #f0f0f0;
+  }
 
-
-}
 
 /* #endregion */
 
@@ -461,6 +466,12 @@ stroke-width: 3px;
   section {
     padding: 5px 10px;
     margin: 15px;
+  }
+
+  #inicio>h1{
+    padding: 5px 10px;
+    margin: 15px;
+    margin-top: 0px;
   }
 
   nav {
