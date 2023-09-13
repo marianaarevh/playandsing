@@ -426,3 +426,52 @@ stroke-width: 3px;
 }
 
 /* #endregion */
+
+/* #region RESPONSIVE */
+
+@media screen and (max-width: 1440px) {
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 40px 70px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 40px 50px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  section {
+    padding: 20px 25px;
+    margin: 5px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .proximos-eventos {
+    padding: 0px 15px 15px 15px;
+    height: auto;
+    margin: 0px 15px 0px 15px;
+    }
+
+  .contendedor-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* #endregion */
