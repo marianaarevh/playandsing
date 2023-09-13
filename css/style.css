@@ -120,17 +120,28 @@ height: auto;
 /* #region Section Top Canciones */
 
 .top-canciones {
-display: flex;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Columnas variables */
+  gap: 10px; /* Espacio entre las canciones */
+  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal cuando sea necesario */
+  white-space: nowrap; /* Evita que las columnas se envuelvan a la siguiente línea */
+  width: 100%; /* Opcional: ajusta el ancho del contenedor */
+
 }
+
 
 .columna {
 flex: 33.33%;
 }
 
 .cancion {
-padding: 5px;
+padding: 15px;
 margin: 5px;
 display: flex;
+
+background-color: #ffffff;
+border-radius: 10px;
 }
 
 .cancion img {
@@ -147,12 +158,20 @@ transform: scale(1.1);
 .cancion-info {
 font-size: 1rem;
 padding: 10px;
+margin: 5px;
 
 }
 
 .cancion-titulo {
 font-size: 1.2rem;
 font-weight: 500;
+padding-bottom: 5px;
+}
+
+.fa-spotify {
+  color: #3ccc39;
+  font-size:1.5rem;
+  margin-top: 10px;
 }
 /* #endregion */
 
@@ -330,6 +349,20 @@ input, textarea {
 
 }
 
+#btn-enviar{
+  color: #f0f0f0;
+  background-color:#f400ff;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 5px;
+}
+
+#btn-enviar:hover{
+  background-color:#c800d2;
+}
+
+
 #contenedor-redes {
   flex: 1; 
   padding: 10px;
@@ -349,12 +382,13 @@ h3 {
   font-weight: 100;
 }
 
-.fa-brands {
+.fa-instagram,
+.fa-facebook,
+.fa-x-twitter,
+.fa-whatsapp {
   color: #43DDE6;
   padding: 10px;
 }
-
-
 
 
 /* #endregion */
@@ -380,6 +414,9 @@ box-shadow: 0px 12px 7px rgba(0, 0, 0, .1);
 transition: 300ms ease;
 }
 
+#btn-ir-arriba:hover {
+  background-color: #c800d2;
+}
 
 #btn-ir-arriba svg {
 width: 25px;

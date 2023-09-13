@@ -20,3 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
   });
+
+  // Recuperar datos del formulario
+//
+
+const contactoForm = document.getElementById('formulario');
+
+contactoForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const nombre = document.getElementById("nombre").value;
+  const email = document.getElementById("email").value;
+  const mensaje = document.getElementById("mensaje").value;
+
+  alert('Gracias por contactarnos - Nombre: ' + nombre + '- Email: ' + email + '- Mensaje: ' + mensaje);
+
+  contactoForm.reset();
+});
