@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <script src="https://kit.fontawesome.com/bc727d0392.js" crossorigin="anonymous"></script>
+
     <script src="./js/main.js"></script>
     <title>Play & Sing!</title>
 </head>
@@ -365,10 +369,35 @@
 
         
     </main>
-    <footer id="contacto">
+    <footer>
         <h1>Formulario de contacto</h1>
-        <h3>Contactos adicionales | Redes sociales</h3>
-        <p>Play & Sing &copy; 2023</p>
+        <div class="contendedor-footer">
+            <div id="contendedor-formulario">
+
+                <form id="formulario">
+
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <input type="email" id="email" placeholder="Email" required>
+
+                    <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+                    <button id="btn-enviar" type="submit" class="btn">Enviar <i class="fa-regular fa-envelope"></i></button>
+                </form>
+            </div>
+
+        <div id="contenedor-redes">
+            <h1>Manda un mensaje</h1>
+            <div id="redes-sociales">
+                <h3>Redes sociales</h3>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <div id="copy"><p>Play & Sing &copy; 2023</p></div>
+        
     </footer>
 
     <button id="btn-ir-arriba" >
